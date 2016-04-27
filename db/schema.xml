@@ -37,7 +37,7 @@
     <type label="SET" length="1" sql="SET" quote=""/>
     <type label="Bit" length="0" sql="bit" quote=""/>
   </group>
-</datatypes><table x="269" y="9" name="events">
+</datatypes><table x="269" y="9" name="commitments">
 <row name="id" null="1" autoincrement="1">
 <datatype>INTEGER</datatype>
 <default>NULL</default></row>
@@ -50,7 +50,7 @@
 <default>NULL</default></row>
 <row name="focus_id" null="1" autoincrement="0">
 <datatype>INTEGER</datatype>
-<default>NULL</default><relation table="foci" row="id" />
+<default>NULL</default><relation table="focuses" row="id" />
 </row>
 <row name="celebration_id" null="1" autoincrement="0">
 <datatype>INTEGER</datatype>
@@ -72,7 +72,7 @@
 <part>id</part>
 </key>
 </table>
-<table x="488" y="105" name="foci">
+<table x="488" y="105" name="focuses">
 <row name="id" null="1" autoincrement="1">
 <datatype>INTEGER</datatype>
 <default>NULL</default></row>
@@ -168,6 +168,9 @@
 <datatype>MEDIUMTEXT</datatype>
 <default>NULL</default></row>
 <row name="password_digest" null="1" autoincrement="0">
+<datatype>MEDIUMTEXT</datatype>
+<default>NULL</default></row>
+<row name="username" null="1" autoincrement="0">
 <datatype>MEDIUMTEXT</datatype>
 <default>NULL</default></row>
 <key type="PRIMARY" name="">
