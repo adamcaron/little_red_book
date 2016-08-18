@@ -1,7 +1,5 @@
 # Little Red Book of Individual Freedom
 
-Production URL: [http://little-red-book.herokuapp.com](http://little-red-book.herokuapp.com)
-
 This app empowers mindfulness practitioners to keep track of daily vow commitments.
 
 Out of a collection of vows, which can range from around five or ten, up into the hundreds, a practitioner takes a few vows (traditionally six) each day on which to focus.
@@ -11,3 +9,19 @@ Taking six vows at a time, the practitioner eventually cycles through the entire
 This app allows a practitioner to store a collection of all his or her vow commitments, cycle through six at a time each day, and take notes on each commitment.
 
 It's called the Little *Red* Book because in the Mahayana Buddhist tradition, red is the color associated with compassion and for someone to keep his or her conduct through commitments of altruistic action is considered one of the highest, most compassionate practices a person can uphold.
+
+## Up and Running
+
+ - `git clone git@github.com:adamcaron/little_red_book.git`
+ - `cd little_red_book`
+ - `npm install`
+ - `touch vows.json`
+ - Add to `vows.json` ...
+```
+{
+  "01": "Some Commitment You'd Like To Foucs On",
+  "02": "Another Commitment You'd Like To Focus On",
+  "03": "A Third Commitment You'd Like To Focus On"
+  // etc.
+}
+```
