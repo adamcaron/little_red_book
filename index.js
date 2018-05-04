@@ -36,3 +36,7 @@ for (session of sessions) {
     console.log(rotation.currentVow)
   }
 }
+
+// Days have sessions
+// sessions have startTimes, endTimes, and vows
+// session needs to know what the last vow was or be told what it's current vow is.
